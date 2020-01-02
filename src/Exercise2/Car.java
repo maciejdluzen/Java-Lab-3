@@ -1,13 +1,15 @@
 package Exercise2;
 
-public class Car implements Identification {
+import java.util.List;
 
+public class Car extends Vehicle {
 
-
-
+    public Car(String make, String model, String regNumber) {
+        super(make, model, regNumber);
+    }
 
     @Override
-    public String getRegistrationNumber() {
-        return null;
+    public String registrationNumber() {
+        return "Numer rejestracyjny samochodu:" + getRegNumber();
     }
 }

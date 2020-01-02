@@ -1,17 +1,13 @@
 package Exercise2;
 
-public class Motorbike implements Identification {
+public class Motorbike extends Vehicle {
 
-    
-
-
-
-
-
-
+    public Motorbike(String make, String model, String regNumber) {
+        super(make, model, regNumber);
+    }
 
     @Override
-    public String getRegistrationNumber() {
-        return null;
+    public String registrationNumber() {
+        return "Numer rejestracyjny motocykla" + getRegNumber();
     }
 }
