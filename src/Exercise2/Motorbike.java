@@ -8,6 +8,6 @@ public class Motorbike extends Vehicle {
 
     @Override
     public String registrationNumber() {
-        return "Numer rejestracyjny motocykla" + getRegNumber();
+        return "Numer rejestracyjny motocykla: " + getRegNumber();
     }
 }
